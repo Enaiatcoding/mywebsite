@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         BASIC PAGE SETTINGS
+    ========================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pronunciation - Learn English
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <img
+            src="images/logo-blue.png"
+            alt="Learn English As Your Native Language"
+        >
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <label
+            for="menu-toggle"
+            class="menu-button"
+        >
+            ☰
+        </label>
+
+        <input
+            type="checkbox"
+            id="menu-toggle"
+        >
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#lessons">
+                Lessons
+            </a>
+
+            <a href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main>
+
+        <section class="lesson-page">
+
+            <h1>
+                English Pronunciation
+            </h1>
+
+            <p class="lesson-intro">
+                Practice English pronunciation clearly and naturally.
+            </p>
+
+
+            <!-- =========================
+                 PRONUNCIATION LESSON
+            ========================= -->
+
+            <div class="lesson-box">
+
+                <h2>
+                    Practice These Words
+                </h2>
+
+
+                <!-- WORD 1 -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            1. Hello
+                        </h3>
+
+                        <h3 dir="rtl">
+                            سلام
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Say: Hello
+                    </p>
+
+                    <button onclick="speak('Hello')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- WORD 2 -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            2. Thank you
+                        </h3>
+
+                        <h3 dir="rtl">
+                            تشکر
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Say: Thank you
+                    </p>
+
+                    <button onclick="speak('Thank you')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- WORD 3 -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            3. Welcome
+                        </h3>
+
+                        <h3 dir="rtl">
+                            خوش آمدید
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Say: Welcome
+                    </p>
+
+                    <button onclick="speak('Welcome')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- WORD 4 -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            4. Beautiful
+                        </h3>
+
+                        <h3 dir="rtl">
+                            زیبا
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Say: Beautiful
+                    </p>
+
+                    <button onclick="speak('Beautiful')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- WORD 5 -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            5. English
+                        </h3>
+
+                        <h3 dir="rtl">
+                            انگلیسی
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Say: English
+                    </p>
+
+                    <button onclick="speak('English')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- WORD 6 -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            6. Practice
+                        </h3>
+
+                        <h3 dir="rtl">
+                            تمرین
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Say: Practice
+                    </p>
+
+                    <button onclick="speak('Practice')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PRACTICE
+            ========================= -->
+
+            <div class="practice-box">
+
+                <h2>
+                    Practice
+                </h2>
+
+                <p>
+                    Listen to each word and repeat it aloud.
+                </p>
+
+                <p>
+                    Try to speak slowly and clearly.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 COMPLETE LESSON
+            ========================= -->
+
+            <button
+                class="quiz-button"
+                onclick="completeLesson('pronunciation')"
+            >
+                Mark Lesson Complete
+            </button>
+
+            <p id="completion-message"></p>
+
+
+            <!-- =========================
+                 LESSON NAVIGATION
+            ========================= -->
+
+            <div class="lesson-navigation">
+
+                <a
+                    class="back-button"
+                    href="index.html#lessons"
+                >
+                    ← Back to Lessons
+                </a>
+
+                <a
+                    class="next-button"
+                    href="quiz.html"
+                >
+                    Next Lesson →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            Learn English As Your Native Language
+        </p>
+
+        <p dir="rtl">
+            انگلیسی را مثل زبان مادری تان بیاموزید
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

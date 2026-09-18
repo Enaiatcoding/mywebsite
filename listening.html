@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         BASIC PAGE SETTINGS
+    ========================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Listening - Learn English
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <img
+            src="images/logo-blue.png"
+            alt="Learn English As Your Native Language"
+        >
+
+
+        <!-- =========================
+             MOBILE MENU BUTTON
+        ========================= -->
+
+        <input
+            type="checkbox"
+            id="menu-toggle"
+        >
+
+        <label
+            for="menu-toggle"
+            class="menu-button"
+        >
+            ☰
+        </label>
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================= -->
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#lessons">
+                Lessons
+            </a>
+
+            <a href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main>
+
+        <section class="lesson-page">
+
+
+            <!-- =========================
+                 LESSON TITLE
+            ========================= -->
+
+            <h1>
+                English Listening
+            </h1>
+
+            <p class="lesson-intro">
+                Listen to simple English sentences and practice understanding them.
+            </p>
+
+
+            <!-- =========================
+                 SIMPLE SENTENCES
+            ========================= -->
+
+            <div class="lesson-box">
+
+                <h2>
+                    Lesson 1: Simple Sentences
+                </h2>
+
+
+                <!-- GOOD MORNING -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            Good morning.
+                        </h3>
+
+                        <h3 dir="rtl">
+                            صبح بخیر.
+                        </h3>
+
+                    </div>
+
+                    <button onclick="speak('Good morning.')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- HOW ARE YOU TODAY -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            How are you today?
+                        </h3>
+
+                        <h3 dir="rtl">
+                            امروز چطور هستید؟
+                        </h3>
+
+                    </div>
+
+                    <button onclick="speak('How are you today?')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- I AM LEARNING ENGLISH -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            I am learning English.
+                        </h3>
+
+                        <h3 dir="rtl">
+                            من در حال یادگیری زبان انگلیسی هستم.
+                        </h3>
+
+                    </div>
+
+                    <button onclick="speak('I am learning English.')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- I LIKE THIS BOOK -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            I like this book.
+                        </h3>
+
+                        <h3 dir="rtl">
+                            من این کتاب را دوست دارم.
+                        </h3>
+
+                    </div>
+
+                    <button onclick="speak('I like this book.')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- WHERE DO YOU LIVE -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            Where do you live?
+                        </h3>
+
+                        <h3 dir="rtl">
+                            کجا زندگی می‌کنید؟
+                        </h3>
+
+                    </div>
+
+                    <button onclick="speak('Where do you live?')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+
+                <!-- I LIVE IN SWEDEN -->
+
+                <div class="word">
+
+                    <div class="vocabulary-word">
+
+                        <h3>
+                            I live in Sweden.
+                        </h3>
+
+                        <h3 dir="rtl">
+                            من در سویدن زندگی می‌کنم.
+                        </h3>
+
+                    </div>
+
+                    <button onclick="speak('I live in Sweden.')">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PRACTICE
+            ========================= -->
+
+            <div class="practice-box">
+
+                <h2>
+                    Practice
+                </h2>
+
+                <p>
+                    Listen to the sentences and repeat them aloud.
+                </p>
+
+                <p>
+                    Good morning. —
+                    How are you today? —
+                    I am learning English. —
+                    I like this book. —
+                    Where do you live? —
+                    I live in Sweden.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 COMPLETE LESSON
+            ========================= -->
+
+            <button
+                class="quiz-button"
+                onclick="completeLesson('listening')"
+            >
+                Mark Lesson Complete
+            </button>
+
+            <p id="completion-message"></p>
+
+
+            <!-- =========================
+                 LESSON NAVIGATION
+            ========================= -->
+
+            <div class="lesson-navigation">
+
+                <a
+                    class="back-button"
+                    href="index.html#lessons"
+                >
+                    ← Back to Lessons
+                </a>
+
+                <a
+                    class="next-button"
+                    href="grammar.html"
+                >
+                    Next Lesson →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            Learn English As Your Native Language
+        </p>
+
+        <p dir="rtl">
+            انگلیسی را مثل زبان مادری تان بیاموزید
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT FILE
+    ========================= -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
